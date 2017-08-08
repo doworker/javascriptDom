@@ -4,6 +4,8 @@ names[1] = '111'
 document.getElementById('cc');
 // console.log( typeof document.getElementById('cc'));
 
+// 注释：indexOf() 方法对大小写敏感！
+// 注释：如果要检索的字符串值没有出现，则该方法返回 -1。
 function getElementsByClassName(node, classname){
 	// if(node.getElementsByClassName){
 	// 	// now
