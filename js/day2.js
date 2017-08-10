@@ -14,3 +14,14 @@ function showPic (dir) {
 // 	};
 // var image = document.getElementById('imagegallery');
 // if(!image){ console.log(image);}
+function addLoadEvent(func){
+	var oldonload = window.onload;
+	if(typeof window.onload != 'funtion'){
+		window.onload = func;
+	}else{
+		window.onload = function(){
+			oldonload();
+			func();
+		}
+	}
+}
