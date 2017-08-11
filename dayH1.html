@@ -7,5 +7,73 @@
 </head>
 <body>
 	
+	<script>
+		'use strict' //严格模式
+		var test = true;
+		if(test){
+			test = false;
+			console.log(test);
+		}
+		// 未初始化的变量 undefined 
+		// 全局变量 局部变量
+		/*
+			typeof 
+			undefined 未定义
+			boolean 布尔值
+			string  字符串
+			number 数字类型
+			object 对象 或者 null
+			function 函数 
+		
+					true                              false
+		Boolean     true                              false
+		String      任何非空字符                      空字符串
+		Number      任何非零数字值(包括无穷大)        0 NaN
+		Object      任何对象                          null
+		Undefined   n/a                               undefined
+
+		*/
+		/*
+			整数和浮点数值【双精度数值】
+			Number.MIN_VALUE
+			Number.MAX_VALUE
+			超出范围 Infinity
+			-Infinity
+			在范围内数字 isFinite()
+			除以0 NaN  任何涉及NaN的操作都会返回NaN
+			NaN != NaN 不相等 
+			isNaN()  不能转换数值的 都会返回true 
+			数值转换
+			Number()  // 任何类型
+			parseInt(x,x) // 字符串转数值  整数
+			parseFloat() // 字符串转数值   浮点数
+
+
+		*/
+		console.log(Number('-111xxxx'));
+		console.log(parseInt('03x'));
+		/*
+			String
+
+			toString()  转换字符串
+			String()  强制转换 
+			null和undefined 没有toString方法
+
+		*/
+		/*
+			Object 类型
+			Constructor // 构造函数
+			hasOwnProperty(propertyName) 属性是否在对象中存在
+			isPrototypeOf(Object) // 检查一个对象是否是另一个对象的原型 *****
+			propertyIsEnumerable(propertyName) // 检测 给定属性是否能够用for in 
+			propertyName 必须是字符串 
+			toLocaleString() /// 返回兑现搞得字符串表示 与执行环境地区对应？ 这是什么东东 **--*
+			toString() 返回字符串 
+			valueOf() 返回对象的字符串 数值 布尔值 
+			
+			一元操作符
+
+		*/
+	</script>
 </body>
 </html>
